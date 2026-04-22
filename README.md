@@ -112,24 +112,6 @@ Access the UI at `http://localhost:8080` and trigger the dbt DAG to run the full
 
 ---
 
-## Project Structure
-
-```
-snowflake_data_project/
-├── models/
-│   ├── staging/          # Cleaning and standardization
-│   │   └── stg_orders.sql
-│   ├── marts/            # Business logic
-│   │   ├── fct_orders.sql
-│   │   └── dim_customers.sql
-│   └── snapshots/        # SCD Type-2 tracking
-│       └── customer_snapshot.sql
-├── seeds/                # CSV source files
-├── tests/                # Custom data quality tests
-├── dags/                 # Airflow DAG definitions
-├── dbt_project.yml
-└── requirements.txt
-```
 
 ---
 
