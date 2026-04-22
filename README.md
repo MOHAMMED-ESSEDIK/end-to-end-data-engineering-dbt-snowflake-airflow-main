@@ -5,12 +5,43 @@
 ## Overview  
 This project is a **complete data engineering pipeline** using **dbt (Data Build Tool), Snowflake (Data Warehouse), and Apache Airflow (Orchestration Tool)**. It covers **data ingestion, transformation, and scheduling** in a structured and scalable manner.  
 
-## Tech Stack  
-- **dbt Core** – For data transformation and modeling  
-- **Snowflake** – Cloud-based data warehouse  
-- **Apache Airflow** – Workflow automation and orchestration  
-- **Python** – Scripting and automation  
-- **Git** – Version control  
+🛠️ Tech Stack
+
+Component
+
+Technology
+
+Purpose
+
+Data Warehouse
+
+Snowflake
+
+Store raw and transformed data
+
+Transformation
+
+dbt Core
+
+Build staging, marts, tests, snapshots
+
+Orchestration
+
+Apache Airflow
+
+Schedule and automate dbt workflows
+
+Scripting
+
+Python
+
+DAGs and automation
+
+Version Control
+
+Git
+
+Track changes and collaboration
 
 
 ## Project Structure  
@@ -67,7 +98,30 @@ Start Apache Airflow
 ```sh
 airflow standalone  # Starts the UI & Scheduler
 ```
+Data Flow
+
+Raw data is loaded into the raw schema in Snowflake
+
+dbt staging models clean and standardize the data
+
+dbt mart models build business-ready tables
+
+fct_orders is built as an incremental model
+
+customer_snapshot tracks historical changes in customers
+
+dbt tests validate data quality
+
+Airflow runs the pipeline every day automatically
 
 
+📚 What I Learned
+Building a modern end-to-end data pipeline
+Modeling raw data into business-ready marts
+Using dbt incremental models to optimize performance
+Tracking historical changes using snapshots
+Scheduling and monitoring workflows with Airflow
+Applying data quality tests and validation
+Designing a scalable architecture using Snowflake
 
 
