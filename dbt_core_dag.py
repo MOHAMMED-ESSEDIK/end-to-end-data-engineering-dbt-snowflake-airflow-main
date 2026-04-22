@@ -21,7 +21,7 @@ dag = DAG(
 )
 
 # Define the path to your dbt project
-DBT_PROJECT_DIR = "/Users/ansamali/snowflake_data_project"  # Update this path
+DBT_PROJECT_DIR = "/Users/essedik/snowflake_data_project"  # Update this path
 
 # Task 1: Run dbt models
 dbt_run = BashOperator(

@@ -7,8 +7,8 @@ models:
         tests:
           - accepted_values:
               values: ['Completed','Pending', 'Cancelled']
-  - name: stg_cutomers
+  - name: stg_customers
     columns:
       - name: customer_id
         tests:
-        - unique
+         - unique

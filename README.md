@@ -16,8 +16,7 @@ This project is a **complete data engineering pipeline** using **dbt (Data Build
 ## Project Structure  
 ```bash
  snowflake_data_project/
-│──  models/                 # dbt models (staging, marts)
-│──  dags/                   # Airflow DAGs (for scheduling)
+│──  models/                 # dbt models (staging, marts)                  # Airflow DAGs (for scheduling)
 │──  logs/                   # Airflow logs
 │──  seeds/                  # Sample seed data for dbt
 │──  macros/                 # dbt macros
@@ -30,7 +29,7 @@ This project is a **complete data engineering pipeline** using **dbt (Data Build
 
 ### Clone the Repository  
 ```sh
-git clone 
+git clone https://github.com/MOHAMMED-ESSEDIK/end-to-end-data-engineering-dbt-snowflake-airflow-main.git
 cd your-repo-name
 ```
 
